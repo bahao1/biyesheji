@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mvn clean compile:*)",
+      "Bash(curl:*)",
+      "Bash(mvn spring-boot:run:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "Bash(npm create:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(mysql:*)",
+      "Bash(timeout 40 bash:*)",
+      "Bash(dir:*)",
+      "Bash(timeout 2 bash:*)",
+      "Bash(cmd /c \"taskkill /PID 23992 /F\")",
+      "Bash(timeout 10 bash:*)",
+      "Bash(cmd /c \"taskkill /PID 20024 /F\")",
+      "Bash(timeout 15 bash:*)",
+      "Bash(powershell -Command \"Stop-Process -Id 20024 -Force\")",
+      "Bash(powershell -Command \"Stop-Process -Id 22392 -Force\")",
+      "Bash(powershell -Command \"Stop-Process -Id 20752 -Force\")",
+      "Bash(powershell -Command \"Stop-Process -Id 10904 -Force\")",
+      "Bash(mvn clean test:*)",
+      "Bash(bash:*)",
+      "Bash(cmd /c \"taskkill /PID 14232 /F\")",
+      "Bash(powershell -Command:*)",
+      "Bash(timeout 20 bash -c \"until powershell -Command \"\"Get-NetTCPConnection -LocalPort 8080 -State Listen -ErrorAction SilentlyContinue\"\" 2>/dev/null | grep -q Listen; do echo ''Waiting for backend...''; sleep 2; done; echo ''Backend started!''\")",
+      "Bash(cmd /c \"taskkill /PID 22292 /F\")",
+      "Bash(timeout 25 bash:*)",
+      "Bash(cmd /c \"taskkill /PID 25376 /F\")"
+    ]
+  }
+}
